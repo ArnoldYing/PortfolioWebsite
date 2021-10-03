@@ -1,0 +1,49 @@
+.about-main {
+  width: 100%;
+  text-align: center;
+}
+
+.basic-about {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.about-heading-div {
+  display: flex;
+}
+
+.about-heading-div > * {
+  flex: 1;
+}
+
+.about-heading-img-div {
+  align-items: center;
+  justify-content: center;
+}
+
+.about-heading-text-div {
+  text-align: center;
+}
+
+.about-heading-img-div > * {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-heading-text {
+  font-size: 56px;
+  font-weight: 400;
+  font-family: "Google Sans Medium";
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.about-header-detail-text {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Google Sans Medium";
+}

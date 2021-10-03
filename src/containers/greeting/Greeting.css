@@ -4,6 +4,7 @@
   margin: 0px auto;
   margin-top: 4rem;
 }
+
 .greet-main {
   width: 90%;
   padding: 20px 10px;
@@ -11,7 +12,7 @@
   margin-top: 2rem;
 }
 
-.gretting-main {
+.greeting-main {
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
@@ -31,7 +32,7 @@
 }
 
 .greeting-text {
-  margin-top: 80px;
+  margin-top: 30px;
   font-size: 70px;
   line-height: 1.1;
   font-family: "Google Sans Bold";
@@ -52,6 +53,9 @@
 
 .greeting-image-div > * {
   max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   height: auto;
 }
 

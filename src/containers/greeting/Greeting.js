@@ -4,7 +4,6 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
-import FeelingProud from "./FeelingProud";
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -17,9 +16,6 @@ export default function Greeting(props) {
               <h1 className="greeting-text" style={{ color: theme.text }}>
                 {greeting.title}
               </h1>
-              {/* <h2 className="greeting-nickname" style={{ color: theme.text }}>
-                ( {greeting.nickname} )
-              </h2> */}
               <p
                 className="greeting-text-p subTitle"
                 style={{ color: theme.secondaryText }}
@@ -27,18 +23,16 @@ export default function Greeting(props) {
                 {greeting.subTitle}
               </p>
               <SocialMedia theme={theme} />
-              {/* <div className="button-greeting-div">
-              <Button text="Contact me" href="#contact" />
-              <Button text="See my resume" newTab={true} href={greeting.resumeLink} />
-            </div> */}
+              <div className="button-greeting-div">
+                <Button text="See my resume" newTab={true} href={greeting.resumeLink} theme={theme} />
+              </div>
             </div>
           </div>
           <div className="greeting-image-div">
             <img
-              alt="saad sitting on table"
-              src={"https://avatars.githubusercontent.com/u/31804240?v=4"}
+              alt="Me :)"
+              src={require(`../../assests/images/arnold-greeting.jpg`)}
             ></img>
-            {/* <FeelingProud theme={theme} /> */}
           </div>
         </div>
       </div>

@@ -5,10 +5,12 @@ import Splash from "../pages/splash/Splash";
 import Education from "../pages/education/EducationComponent";
 import Experience from "../pages/experience/Experience";
 import Opensource from "../pages/opensource/Opensource";
+import Resume from "../pages/resume/resume"
 import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
 import { settings } from "../portfolio.js";
 import Error404 from "../pages/errors/error404/Error";
+import About from "../pages/about/about";
 
 export default class Main extends Component {
   render() {
@@ -31,22 +33,15 @@ export default class Main extends Component {
                 render={(props) => <Home {...props} theme={this.props.theme} />}
               />
               <Route
-                path="/experience"
-                exact
+                path="/resume"
                 render={(props) => (
-                  <Experience {...props} theme={this.props.theme} />
+                  <Resume {...props} theme={this.props.theme} />
                 )}
               />
               <Route
-                path="/education"
+                path="/about"
                 render={(props) => (
-                  <Education {...props} theme={this.props.theme} />
-                )}
-              />
-              <Route
-                path="/opensource"
-                render={(props) => (
-                  <Opensource {...props} theme={this.props.theme} />
+                  <About {...props} theme={this.props.theme} />
                 )}
               />
               <Route
@@ -92,22 +87,15 @@ export default class Main extends Component {
                 render={(props) => <Home {...props} theme={this.props.theme} />}
               />
               <Route
-                path="/experience"
-                exact
+                path="/resume"
                 render={(props) => (
-                  <Experience {...props} theme={this.props.theme} />
+                  <Resume {...props} theme={this.props.theme} />
                 )}
               />
               <Route
-                path="/education"
+                path="/about"
                 render={(props) => (
-                  <Education {...props} theme={this.props.theme} />
-                )}
-              />
-              <Route
-                path="/opensource"
-                render={(props) => (
-                  <Opensource {...props} theme={this.props.theme} />
+                  <About {...props} theme={this.props.theme} />
                 )}
               />
               <Route
